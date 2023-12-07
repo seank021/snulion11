@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./instagram.css" />
+    <link rel="icon" href="./images/profile.png" />
+    <title>Liongram</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <img class="logo" src="./images/logo.png" />
+        <input class="search" placeholder="검색" onchange="getID()" />
+        <div class="icon-list">
+          <img class="home-icon" src="./images/home_icon.png" />
+          <img class="arrow-icon" src="./images/arrow_icon.png" />
+          <img class="compass-icon" src="./images/compass_icon.png" />
+          <img class="heart-icon" src="./images/heart_icon.png" />
+        </div>
+      </header>
+      <div class="parent-container1">
+        <div class="story-container">
+          <div class="story-element" id="story-element1">
+            <div class="story">
+              <img class="story-profile-pic" src="./images/myprofile.jpg" />
+            </div>
+            <div class="story-owner">내 스토리</div>
+          </div>
+          <div class="story-element" id="story-element2">
+            <div class="story story-close-friend">
+              <img
+                class="story-profile-pic"
+                src="./images/leecs_profile.jpeg"
+              />
+            </div>
+            <div class="story-owner">lee_cs_btob</div>
+          </div>
+          <div class="story-element" id="story-element3">
+            <div class="story">
+              <img class="story-profile-pic" src="./images/homin-profile.png" />
+            </div>
+            <div class="story-owner">homin_joo</div>
+          </div>
+          <div class="story-element" id="story-element4">
+            <div class="story">
+              <img class="story-profile-pic" src="./images/od-profile.png" />
+            </div>
+            <div class="story-owner">od_musical</div>
+          </div>
+          <div class="story-element" id="story-element5">
+            <div class="story">
+              <img
+                class="story-profile-pic"
+                src="./images/likelion-profile.png"
+              />
+            </div>
+            <div class="story-owner">likelion_snu</div>
+          </div>
+        </div>
+        <div class="story-modal" id="story-modal1">
+          <img id="story-image1" src="./images/mystory.jpg" />
+          <img
+            class="right-arrow"
+            id="right-arrow1"
+            src="./images/right-arrow.png"
+          />
+        </div>
+        <div class="story-modal" id="story-modal2">
+          <img
+            class="left-arrow"
+            id="left-arrow2"
+            src="./images/left-arrow.png"
+          />
+          <img id="story-image2" src="./images/leecs.jpg" />
+          <img
+            class="right-arrow"
+            id="right-arrow2"
+            src="./images/right-arrow.png"
+          />
+        </div>
+        <div class="story-modal" id="story-modal3">
+          <img
+            class="left-arrow"
+            id="left-arrow3"
+            src="./images/left-arrow.png"
+          />
+          <img id="story-image3" src="./images/homin.jpg" />
+          <img
+            class="right-arrow"
+            id="right-arrow3"
+            src="./images/right-arrow.png"
+          />
+        </div>
+        <div class="story-modal" id="story-modal4">
+          <img
+            class="left-arrow"
+            id="left-arrow4"
+            src="./images/left-arrow.png"
+          />
+          <img id="story-image4" src="./images/deathnote.jpg" />
+          <img
+            class="right-arrow"
+            id="right-arrow4"
+            src="./images/right-arrow.png"
+          />
+        </div>
+        <div class="story-modal" id="story-modal5">
+          <img
+            class="left-arrow"
+            id="left-arrow5"
+            src="./images/left-arrow.png"
+          />
+          <img id="story-image5" src="./images/profile.png" />
+        </div>
+
+        <section class="article-container">
+          <div class="profile-container">
+            <div class="profile">
+              <img
+                id="profile-image"
+                class="profile-image"
+                src="./images/profile.png"
+              />
+              <span id="profile-name" class="profile-name">likelion_snu</span>
+            </div>
+            <div class="menu"></div>
+          </div>
+          <div class="article">
+            <div class="profile-modal">
+              <img id="profile-modal" src="./images/likelion_snu.png" />
+            </div>
+            <img class="article" src="./images/article.jpg" />
+          </div>
+          <div class="button-container">
+            <img
+              id="like-btn"
+              class="feed-buttons"
+              src="./images/black-heart.png"
+            />
+            <img
+              id="liked-btn"
+              class="feed-buttons"
+              src="./images/red-heart.png"
+            />
+            <img
+              id="comment-btn"
+              class="feed-buttons"
+              src="./images/feed_comment_button.png"
+            />
+            <img
+              id="message-btn"
+              class="feed-buttons"
+              src="./images/feed_share_button.png"
+            />
+          </div>
+          <div id="like-count-date-text">
+            <div id="like-count-text">
+              <span>좋아요</span>
+              <span id="like-count">321개</span>
+            </div>
+            <div id="date-text">
+              <span>2023년 3월 25일</span>
+            </div>
+          </div>
+          <div class="parent-container2">
+            <form class="comments-create-form">
+              <img class="smile" src="./images/smile.png" />
+              <input
+                class="comment-input"
+                value=""
+                placeholder="댓글 달기..."
+              />
+              <button type="submit" class="comment-button">게시</button>
+            </form>
+            <div class="emoticon-container">
+              <div class="emoticon-title">최고 인기 이모티콘</div>
+              <div class="emoticons">
+                <div class="emoticon-text">
+                  <div class="emoticon" id="emo1">😂</div>
+                  <div class="emoticon" id="emo2">😮</div>
+                  <div class="emoticon" id="emo3">😍</div>
+                  <div class="emoticon" id="emo4">🥲</div>
+                  <div class="emoticon" id="emo5">👏</div>
+                  <div class="emoticon" id="emo6">🔥</div>
+                  <div class="emoticon" id="emo7">🎉</div>
+                </div>
+                <div class="emoticon-text">
+                  <div class="emoticon" id="emo8">💯</div>
+                  <div class="emoticon" id="emo9">💖</div>
+                  <div class="emoticon" id="emo10">🤣</div>
+                  <div class="emoticon" id="emo11">🥰</div>
+                  <div class="emoticon" id="emo12">😘</div>
+                  <div class="emoticon" id="emo13">😭</div>
+                  <div class="emoticon" id="emo14">😊</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-container"></div>
+        </section>
+        <footer>
+          <p class="footer-message">Ⓒ2022 INSTAGRAM FROM META</p>
+        </footer>
+
+        <div class="alarm-container">
+          <div class="alarm-title">알림</div>
+          <div class="alarm-title-date">오늘</div>
+          <div class="alarm">
+            <img class="alarm-profile" src="./images/leecs_profile.jpeg" />
+            <div class="alarm-content">
+              <span class="alarm-id">lee_cs_btob</span>
+              <img src="./images/blue-check.png" />
+              <span>님이 회원님의 게시물을 좋아합니다.</span>
+              <span class="alarm-time">2분</span>
+            </div>
+            <img class="alarm-post" src="./images/mypic.jpg" />
+          </div>
+          <div class="alarm">
+            <img class="alarm-profile" src="./images/leecs_profile.jpeg" />
+            <div class="alarm-content">
+              <span class="alarm-id">lee_cs_btob</span>
+              <img src="./images/blue-check.png" />
+              <span>님이 회원님의 게시물을 좋아합니다.</span>
+              <span class="alarm-time">26분</span>
+            </div>
+            <img class="alarm-post" src="./images/btob-post.jpg" />
+          </div>
+          <div class="alarm">
+            <img class="alarm-profile" src="./images/dongjae-profile.png" />
+            <div class="alarm-content">
+              <span class="alarm-id">dj_syrius</span>
+              <span>님이 회원님의 게시물을 좋아합니다.</span>
+              <span class="alarm-time">2시간</span>
+            </div>
+            <img class="alarm-post" src="./images/btob-post.jpg" />
+          </div>
+          <div class="alarm">
+            <img class="alarm-profile" src="./images/jihyeon-profile.png" />
+            <div class="alarm-content">
+              <span class="alarm-id">jha_a_</span>
+              <span>님이 회원님의 게시물을 좋아합니다.</span>
+              <span class="alarm-time">3시간</span>
+            </div>
+            <img class="alarm-post" src="./images/mypic.jpg" />
+          </div>
+          <div class="alarm">
+            <img class="alarm-profile" src="./images/yook-profile.png" />
+            <div class="alarm-content">
+              <span class="alarm-id">yook_can_do_it</span>
+              <img src="./images/blue-check.png" />
+              <span>님이 회원님의 게시물을 좋아합니다.</span>
+              <span class="alarm-time">5시간</span>
+            </div>
+            <img class="alarm-post" src="./images/btob-post.jpg" />
+          </div>
+          <div class="alarm">
+            <img class="alarm-profile" src="./images/leecs_profile.jpeg" />
+            <div class="alarm-content">
+              <span class="alarm-id">lee_cs_btob</span>
+              <img src="./images/blue-check.png" />
+              <span>님이 회원님을 팔로우하기 시작했습니다.</span>
+              <span class="alarm-time">5시간</span>
+            </div>
+            <img class="following" src="./images/following.jpg" />
+            <img class="follow" src="./images/follow.jpg" />
+          </div>
+          <div class="alarm">
+            <img class="alarm-profile" src="./images/dangerousman.png" />
+            <div class="alarm-content">
+              <span class="alarm-id">dangerousmanleebyeonggeon</span>
+              <span>님이 회원님의 스토리를 좋아합니다.</span>
+              <span class="alarm-time">7시간</span>
+            </div>
+            <img class="alarm-post" src="./images/mystory.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./instagram.js"></script>
+  </body>
+</html>
